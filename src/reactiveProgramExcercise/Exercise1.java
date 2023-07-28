@@ -11,10 +11,11 @@ public class Exercise1 {
         // Print all numbers in the intNumbersStream stream
         // TODO: Write code here
         Stream<Integer> st = src.intNumbersStream();
-        st.forEach(s -> System.out.println(s));
+       // st.forEach(s -> System.out.println(s));
 
         // Print numbers from intNumbersStream that are less than 5
         // TODO: Write code here
+        st.filter(i -> i < 5).forEach(s -> System.out.println(s));
 
         // Print the second and third numbers in intNumbersStream that's greater than 5
         // TODO: Write code here
