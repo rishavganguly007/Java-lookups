@@ -9,7 +9,9 @@ public class Exercise4 {
         // Use ReactiveSources.intNumberMono()
 
         // Print the value from intNumberMono when it emits
-        ReactiveSources.intNumberMono().subscribe(e -> System.out.println(e));
+        ReactiveSources.intNumberMono().subscribe(e -> System.out.println(e),
+                err -> System.out.println((err.getMessage())),
+                () -> System.out.println("Complete"));
 
         // Get the value from the Mono into an integer variable
         Integer num = ReactiveSources.intNumberMono().block();
