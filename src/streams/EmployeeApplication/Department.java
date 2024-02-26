@@ -1,4 +1,4 @@
-package src.streams.EmployeeApplication;
+package streams.EmployeeApplication;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

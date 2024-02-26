@@ -1,4 +1,4 @@
-package src.streams.EmployeeApplication;
+package streams.EmployeeApplication;
 
 public class MainApplication {
     public static void main(String[] args) {

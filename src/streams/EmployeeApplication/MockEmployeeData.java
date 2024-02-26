@@ -1,4 +1,4 @@
-package src.streams.EmployeeApplication;
+package streams.EmployeeApplication;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
