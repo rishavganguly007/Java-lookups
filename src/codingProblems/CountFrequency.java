@@ -1,4 +1,4 @@
-package src.codingProblems;
+package codingProblems;
 import java.util.*;
 public class CountFrequency {
 
@@ -20,6 +20,8 @@ public class CountFrequency {
     public static void main(String[] args) {
 
         count("hello");
+
+
 
     }
 }
