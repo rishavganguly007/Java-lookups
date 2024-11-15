@@ -8,9 +8,7 @@ package src.codingProblems;
     -> sort the array
 */
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 import java.util.stream.Collector;
 import java.util.stream.Collectors;
 
@@ -19,7 +17,17 @@ public class Excercise {
         int [] a = {4,5,2,5,6,1};
         int [] b = {1,3,7,8,2};
 
-        foo(a,b);
+        String s = "Hello Epam, how are you ?";
+
+        Set<Character> seen = new LinkedHashSet<>();
+        List<Character> first = s.chars()
+                        .mapToObj(c -> (char) c)
+                        .filter(c -> !seen.add(c))
+                        .toList();
+        first.forEach(System.out::println);
+
+
+       // foo(a,b);
     }
 
     private static void foo(int[] a, int[] b)
