@@ -1,5 +1,8 @@
 package codingProblems;
 import java.util.*;
+import java.util.stream.Collectors;
+
+
 public class CountFrequency {
 
     public static void count(String str) {
@@ -17,9 +20,16 @@ public class CountFrequency {
 
     }
 
+    public static void countWithStreams(String s) {
+
+        Map<String, Long> p = s.chars()
+                .mapToObj(c-> String.valueOf((char) c))
+                .collect(Collectors.groupingBy(i -> i, Collectors.counting()));
+
+    }
     public static void main(String[] args) {
 
-        count("hello");
+        count("Hello Epam, how are you ?");
 
 
 

@@ -5,6 +5,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.time.LocalDate;
+import java.util.List;
 
 @Data
 @NoArgsConstructor
@@ -19,6 +20,6 @@ public class Employee {
     private String designation;
     private Double salary;
     private Integer managerId;
-    private Department department;
+    private List<Department> department;
 }
 

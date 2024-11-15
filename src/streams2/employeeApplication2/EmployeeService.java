@@ -31,6 +31,11 @@ public class EmployeeService {
                 .stream()
                 .filter(f -> f.getFirstName().startsWith(initial))
                 .forEach(r -> System.out.println(r.getId() + " " + r.getFirstName() +  " " + r.getLastName()));*/
+        List<Employee> em = getAllEmployees();
+        em.stream()
+                //.map(Employee::getFirstName)
+                .filter(f -> f.getFirstName().startsWith(initial))
+                .forEach(e -> System.out.println(e.getFirstName() + " " + e.getLastName()));
 
    }
 

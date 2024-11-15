@@ -2,6 +2,7 @@ package streams.EmployeeApplication;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class MockEmployeeData {
@@ -18,9 +19,9 @@ public class MockEmployeeData {
 
         // Set manager and department for employees
         employee1.setManagerId(null);
-        employee1.setDepartment(new Department(1, "IT", null));
-        employee2.setDepartment(new Department(2, "HR", null));
-        employee3.setDepartment(new Department(3, "Finance", null));
+        employee1.setDepartment(List.of(new Department(1, "IT", null)));
+        employee2.setDepartment(List.of(new Department(2, "HR", null)));
+        employee3.setDepartment(List.of(new Department(3, "Finance", null)));
 
         // Add employees to the list
         employees.add(employee1);

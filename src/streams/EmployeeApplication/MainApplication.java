@@ -6,9 +6,10 @@ public class MainApplication {
         employeeService.findSumOfSalary();
         employeeService.listDepartmentNameAndCount();
         employeeService.findSeniorMostEmployee();
-        employeeService.findEmpNameAndDuration();
-        employeeService.sortByEmpId();
+//        employeeService.findEmpNameAndDuration();
+//        employeeService.sortByEmpId();
         employeeService.sortByDeptId();
         employeeService.sortByName();
+
     }
 }
